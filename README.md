@@ -20,11 +20,17 @@ Install Postgres 13.11 (or preferred as per your requirement)
 > employee and run below sql queries
 
 CREATE TABLE IF NOT EXISTS employee ( 
+
 	employee_id int, 
+ 
 	employee_name varchar(50) NOT NULL, 
+ 
 	employee_age smallint NOT NULL, 
+ 
 	employee_sex char(1) NOT NULL, 
+ 
 	PRIMARY KEY (employee_id) 
+ 
 ) 
 
 --
