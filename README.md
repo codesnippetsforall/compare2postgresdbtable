@@ -1,15 +1,16 @@
 # compare2postgresdbtable
 Python script to compare 2 Postgres Databases and compare rows for a specific table
 
-Python:
+*Python:*
 
 Install packages for Python:
 > pip install pandas
 > pip install sqlalchemy
 
-Database:
+*Database:*
 
 Download Postgres: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
 Install Postgres 13.11 (or preferred as per your requirement)
 
 > Create 2 Databases
