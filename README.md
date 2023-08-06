@@ -31,9 +31,13 @@ CREATE TABLE IF NOT EXISTS employee (
 --
 
 INSERT INTO employee (employee_id, employee_name, employee_age, employee_sex) VALUES (1234567, 'Test1', 38, 'M');
+
 INSERT INTO employee (employee_id, employee_name, employee_age, employee_sex) VALUES (234567, 'Test2', 39, 'M');
+
 INSERT INTO employee (employee_id, employee_name, employee_age, employee_sex) VALUES (234568, 'Test3', 40, 'M');
+
 INSERT INTO employee (employee_id, employee_name, employee_age, employee_sex) VALUES (234569, 'Test4', 41, 'F'); 
+
 COMMIT;
 
 
