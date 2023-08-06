@@ -5,6 +5,7 @@ Python script to compare 2 Postgres Databases and compare rows for a specific ta
 
 Install packages for Python:
 > pip install pandas
+
 > pip install sqlalchemy
 
 *Database:*
