@@ -32,17 +32,23 @@ CREATE TABLE IF NOT EXISTS employee (
  
 	PRIMARY KEY (employee_id) 
  
-) 
+) ;
 
 > Create one more table in both the Databases
 > payroll and run below sql queries
 
 CREATE TABLE IF NOT EXISTS payroll ( 
+
 	payroll_id int, 
+ 
 	employee_id int, 
+ 
 	date date NOT NULL, 
+ 
 	PRIMARY KEY (payroll_id), 
-	constraint fk_employee foreign key (employee_id) references employee(employee_id) 
+ 
+	constraint fk_employee foreign key (employee_id) references employee(employee_id)
+ 
 );
 
 --
