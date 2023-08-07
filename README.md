@@ -34,6 +34,17 @@ CREATE TABLE IF NOT EXISTS employee (
  
 ) 
 
+> Create one more table in both the Databases
+> payroll and run below sql queries
+
+CREATE TABLE IF NOT EXISTS payroll ( 
+	payroll_id int, 
+	employee_id int, 
+	date date NOT NULL, 
+	PRIMARY KEY (payroll_id), 
+	constraint fk_employee foreign key (employee_id) references employee(employee_id) 
+);
+
 --
 -- Dumping data for table `employee`
 --
@@ -48,4 +59,10 @@ INSERT INTO employee (employee_id, employee_name, employee_age, employee_sex) VA
 
 COMMIT;
 
+--
+-- Dumping data for table `payroll`
+--
 
+INSERT INTO payroll (payroll_id, employee_id, date) VALUES (123456, 1234567, '2023-01-01'); 
+
+COMMIT;
